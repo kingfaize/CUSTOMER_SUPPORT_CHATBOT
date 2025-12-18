@@ -43,9 +43,16 @@ def call_mcp_server(user_message):
             "Accept": "application/json",
             "Content-Type": "application/json"
         }
+        # Example test customer (replace with UI input or logic as needed)
+        test_email = "donaldgarcia@example.net"
+        test_pin = "7912"
         json_payload = {
             "jsonrpc": "2.0",
-            "method": "help",
+            "method": "get",
+            "params": {
+                "email": test_email,
+                "pin": test_pin
+            },
             "id": 1
         }
         response = requests.post(
