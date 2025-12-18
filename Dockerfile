@@ -17,14 +17,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt ./
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy project
+
 COPY . .
 
-# Expose the port Streamlit listens on
+
 EXPOSE 8080
 
-# Streamlit config for Cloud Run
+
 ENV PORT 8080
 
-# Entrypoint
+
 CMD ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
