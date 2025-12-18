@@ -1,0 +1,8 @@
+# Requirements for Customer Support Chatbot
+
+streamlit
+requests
+openai
+python-dotenv
+# For LLM integration: using OpenAI GPT-4o mini
+# For MCP tool discovery: run mcp_discover.py
