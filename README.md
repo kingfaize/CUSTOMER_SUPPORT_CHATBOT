@@ -2,7 +2,7 @@
 title: My Streamlit App
 emoji: 📊
 colorFrom: red
-colorTo: orange
+colorTo: gray
 sdk: docker
 pinned: false
 ---
