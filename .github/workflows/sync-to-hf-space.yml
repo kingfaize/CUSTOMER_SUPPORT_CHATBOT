@@ -14,5 +14,5 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: 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
-        run: git push --force https://kingfaize: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@huggingface.co/spaces/kingfaize/shopping main
+          HF_TOKEN: ${{ secrets.Faisal }}
+        run: git push --force https://kingfaize:$HF_TOKEN@huggingface.co/spaces/kingfaize/shopping main
