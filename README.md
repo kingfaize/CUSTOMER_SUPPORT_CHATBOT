@@ -1,3 +1,12 @@
+---
+title: My Streamlit App
+emoji: 📊
+colorFrom: red
+colorTo: orange
+sdk: docker
+pinned: false
+---
+
 # Customer Support Chatbot Prototype
 
 This project is a prototype for a customer support chatbot for a company selling computer products (monitors, printers, etc). The chatbot integrates with an MCP server using Streamable HTTP to access company features and is designed for demo deployment on platforms like HuggingFace Spaces.
